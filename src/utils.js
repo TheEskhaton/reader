@@ -9,20 +9,21 @@ exports.ref = function(type) {
 };
 
 function generateXML(parent, object) {
+    var node;
     if (Array.isArray(object)) {
-        var node = parent.node('list');
+        node = parent.node('list');
         
         object.forEach(function(item) {
             generateXML(node, item);
         });
     } else if (typeof object === 'object') {
-        var node = parent.node('object');
+        node = parent.node('object');
         
         for (var key in object) {
             generateXML(node, object[key]).attr({ name: key });
         }
     } else {
-        var node = parent.node(typeof object, '' + object);
+        node = parent.node(typeof object, '' + object);
     }
     
     return node;
