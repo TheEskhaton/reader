@@ -67,7 +67,7 @@ app.post('/accounts/ClientLogin', function(req, res) {
             res.write('LSID=' + req.sessionID + '\n');
             res.write('Auth=' + req.sessionID + '\n');
             res.end();
-        })
+        });
     });
 });
 
