@@ -1,7 +1,7 @@
 var mongoose = require('mongoose'),
     bcrypt = require('bcrypt'),
     Subscription = require('./subscription');
-    
+
 var SALT_WORK_FACTOR = 10;
 
 var User = mongoose.Schema({
@@ -14,13 +14,13 @@ var User = mongoose.Schema({
 // hash passwords using bcrypt when they are changed
 User.pre('save', function(next) {
     var user = this;
-    
+
     if (!user.isModified('password'))
         return next();
-        
+
     bcrypt.hash(user.password, SALT_WORK_FACTOR, function(err, hash) {
         if (err) return next(err);
-        
+
         user.password = hash;
         next();
     });
