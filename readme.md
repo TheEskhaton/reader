@@ -51,3 +51,8 @@ _[!] Make sure you have MongoDB up and running before you start the server._
 
     npm start
 
+## Check for lint errors
+
+Please try to eliminate all lint errors before pushing the code to Github. Thanks.
+
+    grunt lint
