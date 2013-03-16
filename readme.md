@@ -1,8 +1,8 @@
 ## What is this?
 
-Google reader is shutting down.  A lot of people use it.  A lot of apps depend on its API.  
-This project will be an attempt to create an API compatible replacement so those apps will 
-continue to work by simply changing the API end point.  I have no plans to build a frontend UI 
+Google reader is shutting down.  A lot of people use it.  A lot of apps depend on its API.
+This project will be an attempt to create an API compatible replacement so those apps will
+continue to work by simply changing the API end point.  I have no plans to build a frontend UI
 replacement, just the backend API.
 
 ## Tech
@@ -26,7 +26,7 @@ Some unofficial API documentation on the old Google Reader API that we'd be copy
 
 ## Want to help?
 
-Get in touch on [Twitter](http://twitter.com/devongovett) or IRC (#reader on Freenode) 
+Get in touch on [Twitter](http://twitter.com/devongovett) or IRC (#reader on Freenode)
 and let me know! :) Feel free to fork this repository and send pull requests implementing features.  Once you've sent a couple good ones, I'll add you as a contributor to the project to commit directly.
 
 Things to work on:
@@ -36,9 +36,23 @@ Things to work on:
 * Testing
 * etc. We are young!
 
+Check out the [issues](https://github.com/devongovett/reader/issues) for more details.
+
 ## Installation
 
 1. [Install MongoDB](http://docs.mongodb.org/manual/installation/) if you haven't already.
 2. [Install Node.js](http://nodejs.org/) if you haven't already.
 3. Clone this repo using Git
 4. Run `npm install` to install the dependencies
+
+## Run the development server
+
+_[!] Make sure you have MongoDB up and running before you start the server._
+
+    npm start
+
+## Check for lint errors
+
+Please try to eliminate all lint errors before pushing the code to Github. Thanks.
+
+    grunt lint

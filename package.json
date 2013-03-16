@@ -1,26 +1,29 @@
 {
-  "name": "greader",
-  "description": "An API Compatible Replacement for Google Reader",
-  "version": "0.0.1",
-  "author": {
-    "name": "Devon Govett",
-    "email": "devongovett@gmail.com",
-    "url": "http://badassjs.com/"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/devongovett/reader.git"
-  },
-  "bugs": "http://github.com/devongovett/reader/issues",
-  "dependencies": {
-    "mongoose": ">=3.5",
-    "express": "3.x",
-    "bcrypt": ">=0.7.5",
-    "qunit-cli": "*",
-    "request": "2.x"
-  },
-  "devDependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-jshint": "~0.3.0"
-  }
+    "name": "greader",
+    "description": "An API Compatible Replacement for Google Reader",
+    "version": "0.0.1",
+    "author": {
+        "name": "Devon Govett",
+        "email": "devongovett@gmail.com",
+        "url": "http://badassjs.com/"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/devongovett/reader.git"
+    },
+    "bugs": "http://github.com/devongovett/reader/issues",
+    "dependencies": {
+        "mongoose": ">=3.5",
+        "express": "3.x",
+        "bcrypt": ">=0.7.5",
+        "request": "2.x"
+    },
+    "devDependencies": {
+        "grunt": "~0.4.1",
+        "grunt-contrib-jshint": "~0.3.0",
+        "qunit-cli": "*"
+    },
+    "scripts": {
+        "start": "node src/api.js"
+    }
 }
